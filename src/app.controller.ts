@@ -15,6 +15,12 @@ export class AppController {
   @UseGuards(WebhookAuthGuard)
   webhook(@Body() body: any) {
     console.log(body);
+
+      body.data.articles.forEach(article => {
+        console.log(article);
+      });
+
+
     return { message: 'Webhook received successfully', data: body };
   }
 }
