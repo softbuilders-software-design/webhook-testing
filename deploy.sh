@@ -38,7 +38,7 @@ elif [ -f ".env" ]; then
 fi
 
 # Set default port if not defined in .env
-PORT=${PORT:-4001}
+PORT=${PORT:-3000}
 echo "Using PORT: ${PORT}"
 
 # Construct container and image names
